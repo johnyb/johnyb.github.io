@@ -1,0 +1,25 @@
+{
+  "name": "johnyb.github.io",
+  "version": "0.0.0",
+  "authors": [
+    "Julian Bäume <julian@svg4all.de>"
+  ],
+  "description": "Personal blog",
+  "main": "index.html",
+  "keywords": [
+    "blog"
+  ],
+  "license": "MIT",
+  "homepage": "https://johnyb.github.io/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.1.1"
+  }
+}
