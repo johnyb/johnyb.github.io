@@ -6,37 +6,38 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
-	<!-- Bootstrap -->
+        <link href="/assets/css/style.css" rel="stylesheet">
+        <!-- Bootstrap -->
         <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
         <!-- syntax highlighting CSS -->
         <link rel="stylesheet" href="/assets/css/syntax.css">
     </head>
     <body>
+        <header class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-header"><a class="navbar-brand" href="/">{{ site.name }}</a></div>
+            <nav class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a class="extra" href="/">home</a></li>
+                </ul>
+            </nav>
+        </header>
         <div class="container">
-          <div class="site">
-            <div class="header">
-              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-              <a class="extra" href="/">home</a>
-            </div>
-
-                {{ content }}
-
-            <div class="footer">
-              <div class="contact">
-                <p>
-                  -- j.ohny.b
-                </p>
-              </div>
-              <div class="contact">
-                <p>
-                  <a href="https://github.com/johnyb/">github.com/johnyb</a><br />
-                </p>
-              </div>
-            </div>
-          </div>
+            {{ content }}
+            <footer>
+                <div class="contact">
+                    <p>
+                        -- j.ohny.b
+                    </p>
+                </div>
+                <div class="contact">
+                    <p>
+                        <a href="https://github.com/johnyb/">github.com/johnyb</a><br />
+                    </p>
+                </div>
+            </footer>
         </div>
-	
-	<script src="/assets/js/jquery.min.js"></script>
-	<script src="/assets/js/bootstrap.min.js"></script>
+
+        <script src="/assets/js/jquery.min.js"></script>
+        <script src="/assets/js/bootstrap.min.js"></script>
     </body>
 </html>

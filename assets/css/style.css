@@ -1,0 +1,7 @@
+body {
+    padding-top: 50px;
+}
+
+body > .container > footer {
+    padding-top: 25px;
+}
