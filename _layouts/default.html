@@ -39,5 +39,18 @@
 
         <script src="/assets/js/jquery.min.js"></script>
         <script src="/assets/js/bootstrap.min.js"></script>
+        <script>
+            // Based on code from http://ben.balter.com/2014/03/13/pages-anchor-links/ - MIT licensed
+            $(function() {
+                return $("article.post h2, article.post h3, article.post h4, article.post h5, article.post h6").each(function(i, el) {
+                    var $el, id;
+                    $el = $(el);
+                    id = $el.attr('id');
+                    if (id) {
+                        return $el.prepend($("<a />").addClass("header-link").attr("href", "#" + id));
+                    }
+                });
+            });
+        </script>
     </body>
 </html>
