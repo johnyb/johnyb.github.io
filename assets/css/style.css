@@ -5,3 +5,7 @@ body {
 body > .container > footer {
     padding-top: 25px;
 }
+
+article.post {
+    font-size: 14pt;
+}
