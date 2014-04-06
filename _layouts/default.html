@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="/assets/css/syntax.css">
     </head>
     <body>
-        <header class="navbar navbar-inverse navbar-fixed-top">
+        <header class="navbar navbar-inverse navbar-fixed-top slide">
             <div class="navbar-header"><a class="navbar-brand" href="/">{{ site.name }}</a></div>
             <nav class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
@@ -39,6 +39,8 @@
 
         <script src="/assets/js/jquery.min.js"></script>
         <script src="/assets/js/bootstrap.min.js"></script>
+        <script src="/assets/js/headroom.min.js"></script>
+        <script src="/assets/js/jQuery.headroom.min.js"></script>
         <script>
             // Based on code from http://ben.balter.com/2014/03/13/pages-anchor-links/ - MIT licensed
             $(function() {
@@ -50,6 +52,10 @@
                         return $el.prepend($("<a />").addClass("header-link").attr("href", "#" + id));
                     }
                 });
+            });
+            // init headroom.js
+            $(function () {
+                $('header.navbar').headroom();
             });
         </script>
     </body>
