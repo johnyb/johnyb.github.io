@@ -8,6 +8,11 @@ body > .container > footer {
 
 article.post {
     font-size: 13pt;
+    font-family: Oxygen, sans-serif;
+}
+
+.navbar-brand {
+    font-family: "Finger Paint", cursive;
 }
 
 header.headroom--unpinned {
