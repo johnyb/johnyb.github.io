@@ -152,7 +152,7 @@ It relies on the `_.extend` method, but could of course have been written in pla
 Since we already have `underscore` installed, we made use of it.
 
 While writing this post, I remembered, we added another way to extend certain tasks more easily.
-This would have been really helpful for the [copy_build](#using_external_libraries) task, but
+This would have been really helpful for the [copy_build](#using-external-libraries) task, but
 it is not yet implemented like this. The idea is to prefix all subtasks that belong together and
 have a simple way to run all subtasks with a certain prefix.
 
