@@ -2,12 +2,16 @@ body {
     padding-top: 50px;
 }
 
+.container {
+    max-width: 58em;
+}
+
 body > .container > footer {
     padding-top: 25px;
 }
 
 article.post {
-    font-size: 13pt;
+    font-size: 11pt;
     font-family: Oxygen, sans-serif;
 }
 
